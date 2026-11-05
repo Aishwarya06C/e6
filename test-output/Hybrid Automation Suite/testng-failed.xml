@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hybrid Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Python Login Engine Validation(failed)">
+    <classes>
+      <class name="pylo.loginTest">
+        <methods>
+          <include name="executePythonLoginTest"/>
+        </methods>
+      </class> <!-- pylo.loginTest -->
+    </classes>
+  </test> <!-- Python Login Engine Validation(failed) -->
+</suite> <!-- Failed suite [Hybrid Automation Suite] -->
