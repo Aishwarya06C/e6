@@ -12,7 +12,7 @@ public class loginTest {
 	            System.out.println("Starting Python Login Automation execution via Java ProcessBuilder...");
 	            
 	            // Invoke the Python page script inside your workspace directory
-	            ProcessBuilder processBuilder = new ProcessBuilder("python", "webpage/page.py");
+	            ProcessBuilder processBuilder = new ProcessBuilder("python3", "webpage/page.py");
 	            processBuilder.redirectErrorStream(true);
 	            
 	            Process process = processBuilder.start();
