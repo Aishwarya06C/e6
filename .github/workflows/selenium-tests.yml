@@ -27,10 +27,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-	  - name: Install Python dependencies
-	  	run: |
-		  python -m pip install --upgrade pip
-		  pip install selenium webdriver-manager
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install selenium webdriver-manager
+          python -m pip show webdriver-manager
 
       - name: Run Selenium Tests
         run: mvn clean test
